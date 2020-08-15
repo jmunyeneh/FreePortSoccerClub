@@ -1,4 +1,4 @@
-﻿{
+{
   "iisSettings": {
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
@@ -12,16 +12,17 @@
       "commandName": "IISExpress",
       "launchBrowser": true,
       "environmentVariables": {
+        "jmunyeneh": "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",
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
     "FreePortSoccer": {
       "commandName": "Project",
       "launchBrowser": true,
-      "applicationUrl": "https://localhost:5001;http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "applicationUrl": "https://localhost:5001;http://localhost:5000"
     }
   }
 }

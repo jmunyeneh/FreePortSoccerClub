@@ -1,0 +1,85 @@
+﻿@page
+@model FreePortSoccer.Pages.Players.IndexModel
+
+@{
+    Layout = "_Layout2";
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Player[0].JerseyNo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player[0].PlayerName)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.Player[0].Posi_to_play)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.Player[0].DOB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player[0].Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player[0].PlayingClub)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.Player[0].Image)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Player[0].ImageContentType)
+            </th>*@
+            <th>
+                @Html.DisplayNameFor(model => model.Player[0].position.PositionDes)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Player) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.JerseyNo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlayerName)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Posi_to_play)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.DOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PlayingClub)
+            </td>
+            @*<td>
+                @Html.DisplayFor(modelItem => item.Image)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ImageContentType)
+            </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.position.PositionDes)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.PlayerId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.PlayerId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.PlayerId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
