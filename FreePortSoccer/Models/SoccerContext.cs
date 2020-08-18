@@ -15,5 +15,6 @@ namespace FreePortSoccer.Models
 
         public DbSet<Player> Players { get; set; }
         public DbSet<Position> Positions { get; set; }
+        public DbSet<News> News { get; set; }
     }
 }

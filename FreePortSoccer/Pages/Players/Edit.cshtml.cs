@@ -51,7 +51,15 @@ namespace FreePortSoccer.Pages.Players
             }
                        
             Player.ModifiedDate = DateTime.Now;
-            
+
+            _context.Attach(Player).State = EntityState.Modified;
+
+            if(Player.Image == null)
+            {
+                var databaseValues = _context.Entry(Player).GetDatabaseValues();
+                Player.Image = (byte[])databaseValues["Image"];
+                Player.ImageContentType = (string)databaseValues["ImageContentType"];
+            }
 
             if (Image != null) {
                 using (var stream = new MemoryStream())
@@ -61,9 +69,7 @@ namespace FreePortSoccer.Pages.Players
                     Player.Image = stream.ToArray();
                     Player.ImageContentType = Image.ContentType;
                 }
-            }
-
-            _context.Attach(Player).State = EntityState.Modified;
+            }           
 
             try
             {
