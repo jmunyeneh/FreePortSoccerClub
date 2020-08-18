@@ -1,0 +1,73 @@
+﻿@page
+@model FreePortSoccer.Pages.NewArticle.EditModel
+
+@{
+    Layout = "_Layout2";
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>News</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" enctype="multipart/form-data" >
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="News.Id" />
+            <div class="form-group">
+                <label asp-for="News.Title" class="control-label"></label>
+                <input asp-for="News.Title" class="form-control" />
+                <span asp-validation-for="News.Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="News.Article" class="control-label"></label>
+                <textarea asp-for="News.Article" class="form-control" rows="4" cols="50"></textarea>
+                <span asp-validation-for="News.Article" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="News.Author" class="control-label"></label>
+                <input asp-for="News.Author" class="form-control" />
+                <span asp-validation-for="News.Author" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="News.InsertedDate" class="control-label"></label>
+                <input asp-for="News.InsertedDate" class="form-control" />
+                <span asp-validation-for="News.InsertedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="News.ModifiedDate" class="control-label"></label>
+                <input asp-for="News.ModifiedDate" class="form-control" />
+                <span asp-validation-for="News.ModifiedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="News.IsHighLights" /> @Html.DisplayNameFor(model => model.News.IsHighLights)
+                </label>
+            </div>
+            <div class="form-group">
+                <div class="input-group mb-3">
+                    <div class="custom-file">
+                        <input type="file" asp-for="Image" class="custom-file-input" id="inputGroupFile02">
+                        <label class="custom-file-label" for="inputGroupFile02">Choose image</label>
+                    </div>
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="">Upload</span>
+                    </div>
+                </div>
+            </div>            
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
