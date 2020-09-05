@@ -4,10 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using FreePortSoccer.Models;
 using FreePortSoccer.Services;
-//using FreePortSoccer.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,6 +30,13 @@ namespace FreePortSoccer
         {
             services.AddRazorPages();
             services.AddDbContext<SoccerContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SoccerContext")));
+
+            services.AddDbContext<IdentityDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("SoccerContext"),
+                optionsBuilder => optionsBuilder.MigrationsAssembly("FreePortSoccer")));
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<IdentityDbContext>()
+                .AddDefaultTokenProviders();
 
             services.AddScoped<IPlayerService, PlayerService>();
             services.AddScoped<INewsService, NewsService>();

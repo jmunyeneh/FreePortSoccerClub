@@ -11,5 +11,6 @@ namespace FreePortSoccer.Services
         Task<News> FindAsync(long id);
         IQueryable<News> GetAll(int? count = null, int? page = null);
         Task<News[]> GetAllAsync(int? count = null, int? page = null);
+        int GetRecordCount();
     }
 }

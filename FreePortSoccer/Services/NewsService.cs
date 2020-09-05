@@ -35,5 +35,11 @@ namespace FreePortSoccer.Services
             return GetAll(count, page)               
                 .ToArrayAsync();
         }
+
+        public int GetRecordCount()
+        {
+            var count = _db.News.Count();
+            return count;
+        }
     }
 }

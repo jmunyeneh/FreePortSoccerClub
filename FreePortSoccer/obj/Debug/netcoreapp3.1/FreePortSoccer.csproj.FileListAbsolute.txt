@@ -161,8 +161,6 @@ C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\bin\Deb
 C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\obj\Debug\netcoreapp3.1\FreePortSoccer.csproj.CoreCompileInputs.cache
-C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\obj\Debug\netcoreapp3.1\FreePortSoccer.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
 C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\obj\Debug\netcoreapp3.1\Razor\Pages\contact.cshtml.g.cs
@@ -188,3 +186,11 @@ C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\obj\Deb
 C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\obj\Debug\netcoreapp3.1\Razor\Pages\NewArticle\Details.cshtml.g.cs
 C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\obj\Debug\netcoreapp3.1\Razor\Pages\NewArticle\Edit.cshtml.g.cs
 C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\obj\Debug\netcoreapp3.1\Razor\Pages\NewArticle\Index.cshtml.g.cs
+C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Pager\Default.cshtml.g.cs
+C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\obj\Debug\netcoreapp3.1\FreePortSoccer.csproj.CoreCompileInputs.cache
+C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\obj\Debug\netcoreapp3.1\FreePortSoccer.MvcApplicationPartsAssemblyInfo.cache
