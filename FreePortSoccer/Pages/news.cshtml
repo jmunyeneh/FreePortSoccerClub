@@ -1,7 +1,14 @@
-﻿@page
-@using FreePortSoccer.Models
+﻿@page  
+@model FreePortSoccer.PaginationCls.PagedResult<News>
 @{
-    var news = await NewsService.GetAllAsync();  
+    var PageSize = 3;
+    var page = 0;
+    var news = await NewsService.GetAllAsync(3,page);
+    var count = NewsService.GetRecordCount();
+
+    ViewBag.MaxPage = (count / PageSize) - (count % PageSize == 0 ? 1 : 0);
+    ViewBag.Page = page;
+    
 }
 
 <div class="site-blocks-cover overlay" style="background-image: url(images/hero_bg_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
@@ -34,18 +41,37 @@
                 </div>
             }
         </div>
-    
-        <div class="row">        
+       
+        <div>
+            @if (ViewBag.Page > 0)
+            {
+                <a href="@Url.Action("Index", new { page = ViewBag.Page - 1 })"
+                   class="btn btn-default">
+                    &laquo; Prev
+                </a>
+            }
+            @if (ViewBag.Page < ViewBag.MaxPage)
+            {
+                <a href="@Url.Action("Index", new { page = ViewBag.Page + 1 })"
+                   class="btn btn-default">
+                    Next &raquo;
+                </a>
+            }
+        </div>
+
+        <div class="row">
             <div class="col-md-12 text-center">
                 <div class="site-block-27">
-                    <ul>                        
-                       <li><a href="#">&lt;</a></li>
-                       <li class="active"><span>1</span></li>
-                       <li><a href="#">2</a></li>
-                       <li><a href="#">3</a></li>
-                       <li><a href="#">4</a></li>
-                       <li><a href="#">5</a></li>
-                       <li><a href="#">&gt;</a></li>
+                    <ul>
+                        @*
+                        <li><a href="#">&lt;</a></li>
+                        <li class="active"><span>1</span></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&gt;</a></li>
+                        *@
                     </ul>
                 </div>
             </div>
