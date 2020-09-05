@@ -26,8 +26,15 @@ using FreePortSoccer.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\JaydenExpress\source\repos\Projects\FreePortClub\FreePortSoccer\Pages\_ViewImports.cshtml"
+using FreePortSoccer.PaginationCls;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"76ce779325397a906ef17614332d8a6f57576133", @"/Pages/Shared/_Layout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c6a5d7b5d797ba58c025535d91367f115009b134", @"/Pages/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"914ec1cb1db6ce8d8ad99dee577341b89dcb0143", @"/Pages/_ViewImports.cshtml")]
     public class Pages_Shared__Layout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-area", "", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -70,7 +77,7 @@ using FreePortSoccer.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<!DOCTYPE html>\r\n<html lang=\"en\">\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f575761337120", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f575761337336", async() => {
                 WriteLiteral(@"
     <title>Sportz &mdash; Colorlib Sports Team Template</title>
     <meta charset=""utf-8"">
@@ -102,7 +109,7 @@ using FreePortSoccer.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f575761338872", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f575761339088", async() => {
                 WriteLiteral(@"
     <div class=""site-wrap"">
 
@@ -136,7 +143,7 @@ using FreePortSoccer.Models;
                 <div class=""container position-relative"">
                     <div class=""site-logo"">
                         ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613310933", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613311149", async() => {
                     WriteLiteral("<img src=\"images/logo.jpg\"");
                     BeginWriteAttribute("alt", " alt=\"", 3027, "\"", 3033, 0);
                     EndWriteAttribute();
@@ -164,7 +171,7 @@ using FreePortSoccer.Models;
                     <ul class=""site-menu js-clone-nav d-none d-md-block"">
                         <li class=""has-children active"">
                             ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613312936", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613313152", async() => {
                     WriteLiteral("Home");
                 }
                 );
@@ -198,7 +205,7 @@ using FreePortSoccer.Models;
                         </li>
                         <li class=""has-children"">
                             ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613315279", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613315495", async() => {
                     WriteLiteral("News");
                 }
                 );
@@ -223,7 +230,7 @@ using FreePortSoccer.Models;
                             </ul>
                         </li>
                         <li>");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613317068", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613317284", async() => {
                     WriteLiteral("Matches");
                 }
                 );
@@ -241,7 +248,7 @@ using FreePortSoccer.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("</li>\r\n                        <li>");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613318528", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613318744", async() => {
                     WriteLiteral("Team");
                 }
                 );
@@ -259,7 +266,7 @@ using FreePortSoccer.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("</li>\r\n                        <li>");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613319985", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613320201", async() => {
                     WriteLiteral("About");
                 }
                 );
@@ -277,7 +284,7 @@ using FreePortSoccer.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("</li>\r\n                        <li>");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613321443", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613321659", async() => {
                     WriteLiteral("Contact");
                 }
                 );
@@ -370,7 +377,7 @@ using FreePortSoccer.Models;
                             <div class=""col-md-6 col-lg-6"">
                                 <ul class=""list-unstyled"">
                                     <li>");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613327248", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613327464", async() => {
                     WriteLiteral("Home");
                 }
                 );
@@ -388,7 +395,7 @@ using FreePortSoccer.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("</li>\r\n                                    <li>");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613328717", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613328933", async() => {
                     WriteLiteral("Matches");
                 }
                 );
@@ -406,7 +413,7 @@ using FreePortSoccer.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("</li>\r\n                                    <li>");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613330189", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613330405", async() => {
                     WriteLiteral("News");
                 }
                 );
@@ -424,7 +431,7 @@ using FreePortSoccer.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("</li>\r\n                                    <li>");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613331658", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613331874", async() => {
                     WriteLiteral("Team");
                 }
                 );
@@ -442,7 +449,7 @@ using FreePortSoccer.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("</li>\r\n                                </ul>\r\n                            </div>\r\n                            <div class=\"col-md-6 col-lg-6\">\r\n                                <ul class=\"list-unstyled\">\r\n                                    <li>");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613333335", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613333551", async() => {
                     WriteLiteral("About Us");
                 }
                 );
@@ -460,7 +467,7 @@ using FreePortSoccer.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("</li>\r\n                                    <li>");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613334808", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613335024", async() => {
                     WriteLiteral("Privacy Policy");
                 }
                 );
@@ -478,7 +485,7 @@ using FreePortSoccer.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("</li>\r\n                                    <li>");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613336287", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613336503", async() => {
                     WriteLiteral("Contact Us");
                 }
                 );
@@ -496,7 +503,7 @@ using FreePortSoccer.Models;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("</li>\r\n                                    <li>");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613337762", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613337978", async() => {
                     WriteLiteral("Membership");
                 }
                 );
@@ -536,7 +543,7 @@ using FreePortSoccer.Models;
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minima minus odio.</p>
 
                             ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613340425", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "76ce779325397a906ef17614332d8a6f5757613340641", async() => {
                     WriteLiteral(@"
                                 <div class=""input-group mb-3"">
                                     <input type=""text"" class=""form-control border-secondary text-white bg-transparent"" placeholder=""Enter Email"" aria-label=""Enter Email"" aria-describedby=""button-addon2"">
